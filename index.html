@@ -21,16 +21,13 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            overflow: hidden;
         }
         img {
             width: 100%;
             height: 100%;
-            object-fit: cover;
+            object-fit: contain; /* A teljes kép látható, torzítás nélkül */
             cursor: pointer;
-            transition: opacity 0.2s ease;
-        }
-        img:hover {
-            opacity: 0.8;
         }
 
         /* Mobil nézet */
