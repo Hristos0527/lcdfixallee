@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing oldal</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+        .image-container {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            cursor: pointer;
+            transition: opacity 0.2s ease;
+        }
+        img:hover {
+            opacity: 0.8;
+        }
+
+        /* Mobil nézet */
+        @media (max-width: 768px) {
+            .desktop-image {
+                display: none;
+            }
+        }
+
+        /* Asztali nézet */
+        @media (min-width: 769px) {
+            .mobile-image {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="image-container">
+        <!-- Desktop kép -->
+        <a href="https://megadottlink.hu" target="_blank">
+            <img src="lcdfix-landing-desktop.png" alt="Desktop kép" class="desktop-image" />
+            <img src="lcdfix-landing-mobile.png" alt="Mobil kép" class="mobile-image" />
+        </a>
+    </div>
+</body>
+</html>
